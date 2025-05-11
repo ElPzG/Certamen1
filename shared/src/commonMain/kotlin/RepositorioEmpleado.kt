@@ -1,7 +1,11 @@
 object RepositorioEmpleado{
 
     // lista mutable para guardar los empleados
-    private val empleados = mutableListOf<Empleado>()
+    private val empleados = mutableListOf(
+        Empleado(id = 1, nombre = "Juan", apellido = "Perez", cargo = "Desarrollador", nacionalidad = "Chileno"),
+        Empleado(id = 2, nombre = "Rodrigo", apellido = "Salinas", cargo = "Limpiador", nacionalidad = "Chileno"),
+        Empleado(id = 3, nombre = "Ana", apellido = "Pereira", cargo = "Secretaria", nacionalidad = "Argentina")
+    )
 
     // esta func. me devuelve todos los empleados
     fun getAll() = empleados
